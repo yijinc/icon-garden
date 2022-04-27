@@ -1,0 +1,8 @@
+.idea
+*.iml
+.vscode
+node_modules
+package-lock.json
+dist
+lerna-debug.log
+.DS_Store
