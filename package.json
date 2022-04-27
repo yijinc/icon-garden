@@ -2,20 +2,15 @@
   "name": "icon-garden",
   "private": true,
   "scripts": {
-    "compiler:icons": "ts-node build/build-icons.ts",
     "compiler:code": "ts-node build/build-code.ts",
-    "compiler:clean": "rm -rf packages/*/src/runtime packages/*/src/index.ts packages/*/src/icons",
-    "compiler": "npm run compiler:clean && npm run compiler:icons && npm run compiler:code",
-    "build:clean": "rm -rf packages/*/lib packages/*/es packages/*/styles",
-    "build:source": "gulp",
-    "build:prepare": "npm run build:clean && npm run build:source",
-    "publish:lerna": "lerna publish --skip-temp-tag --registry=https://registry.npmjs.org",
-    "publish:all": "npm run build:prepare && npm run publish:lerna && npm run build:clean"
+    "compiler:clean": "rm -rf packages/*/src/icons",
+    "compiler": "npm run compiler:clean && npm run compiler:code"
   },
   "dependencies": {
     "@types/react": "^18.0.8"
   },
   "devDependencies": {
+    "@types/node": "^17.0.29",
     "lerna": "^4.0.0",
     "ts-node": "^10.7.0",
     "typescript": "^4.6.3"
