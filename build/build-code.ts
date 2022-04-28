@@ -14,7 +14,8 @@ const compile = (type: 'react' | 'vue' | 'svg' | 'vue-next') => {
   const generateCode = (svgFilePath: string) => {
     const content = fs.readFileSync(svgFilePath, { encoding: "utf8" });
     const fileName = path.basename(svgFilePath, '.svg');
-    fs.writeFileSync(path.join(iconsDir, `${toCamelCase(fileName)}.tsx`), convertCode(type, content), { encoding: "utf8" });
+    const extname = type === 'svg' ? '.ts' : '.tsx';
+    fs.writeFileSync(path.join(iconsDir, `${toCamelCase(fileName)}${extname}`), convertCode(type, content), { encoding: "utf8" });
   };
   
   const traverseFile = (dirPath: string) => {
@@ -42,4 +43,4 @@ const compile = (type: 'react' | 'vue' | 'svg' | 'vue-next') => {
   exportCodeIntoIndex();
 };
 
-compile('react');
+compile('vue-next');
