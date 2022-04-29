@@ -17,5 +17,19 @@
   },
   "dependencies": {
     "vue": "^3.2.33"
+  },
+  "bugs": {
+    "url": "https://github.com/yijinc/icon-garden/issues"
+  },
+  "repository": {
+      "type": "git",
+      "url": "https://github.com/yijinc/icon-garden"
+  },
+  "engines": {
+      "node": ">= 10.0.0",
+      "npm": ">= 6.0.0"
+  },
+  "publishConfig": {
+      "access": "public"
   }
 }
