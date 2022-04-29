@@ -15,5 +15,8 @@
   },
   "dependencies": {
     "vue": "^2.6.14"
+  },
+  "devDependencies": {
+    "csstype": "^3.0.11"
   }
 }
