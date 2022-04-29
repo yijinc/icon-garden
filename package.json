@@ -6,7 +6,9 @@
     "compiler:clean": "rm -rf packages/*/src/icons",
     "compiler": "npm run compiler:clean && npm run compiler:code",
     "build:clean": "rm -rf packages/*/lib packages/*/es",
-    "build": "gulp"
+    "build:source": "gulp",
+    "build": "npm run build:clean && npm run build:source",
+    "publish": "lerna publish from-package --registry=https://registry.npmjs.org"
   },
   "devDependencies": {
     "@babel/core": "^7.17.9",
