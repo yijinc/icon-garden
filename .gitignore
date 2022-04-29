@@ -6,3 +6,6 @@ package-lock.json
 dist
 lerna-debug.log
 .DS_Store
+
+packages/*/es
+packages/*/lib
