@@ -6,12 +6,12 @@ import convertSvg from './template-svg';
 /**
  * svg代码转化成 'react' | 'vue' | 'svg' | 'vue-next' 对应代码
  * **/
-export const convertCode = (type: 'react' | 'vue' | 'svg' | 'vue-next', svgString: string): string => {
+export const convertCode = (type: 'react' | 'vue' | 'svg' | 'vue-next', fileName: string, fileContent: string): string => {
   switch(type) {
-    case 'react': return convertReact(svgString);
-    case 'vue': return convertVue(svgString);
-    case 'svg': return convertSvg(svgString);
-    case 'vue-next': return convertVue3(svgString);
+    case 'react': return convertReact(fileName, fileContent);
+    case 'vue': return convertVue(fileName, fileContent);
+    case 'svg': return convertSvg(fileName, fileContent);
+    case 'vue-next': return convertVue3(fileName, fileContent);
     default: return '';
   }
 }

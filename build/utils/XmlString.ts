@@ -1,3 +1,10 @@
+/**
+ * 转驼峰命名
+ * **/
+export const toCamelCase = (name: string) => {
+  return name.split('-').map((str: string) => str.charAt(0).toUpperCase() + str.substring(1)).join('');
+}
+
 export default class XString extends String {  
   _string = '';
 
