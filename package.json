@@ -5,6 +5,7 @@
     "compiler:code": "ts-node build/build-code.ts",
     "compiler:clean": "rm -rf packages/*/src/icons",
     "compiler": "npm run compiler:clean && npm run compiler:code",
+    "build:clean": "rm -rf packages/*/lib packages/*/es",
     "build": "gulp"
   },
   "devDependencies": {
