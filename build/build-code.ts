@@ -43,4 +43,7 @@ const compile = (type: 'react' | 'vue' | 'svg' | 'vue-next') => {
   exportCodeIntoIndex();
 };
 
+compile('react');
+compile('svg');
+compile('vue');
 compile('vue-next');
