@@ -28,7 +28,7 @@ export default ({ icons }: IProps) => {
           const { name, icon: Icon } = item;
           return <div key={name} className={styles.item} onClick={() => clickItem(item)}>
             <div className={styles.name}>{name}</div>
-            <Icon size="32" fill="#000000" />
+            <Icon size="32" color="#000000" />
             <div className={styles.footer}>
               <DownloadBaseOutline fill="#b0b1b8" size="14" />
             </div>

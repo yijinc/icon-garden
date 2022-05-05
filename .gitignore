@@ -18,3 +18,10 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# git branch other
+build
+packages
+source
+gulpfile.ts
+lerna.json

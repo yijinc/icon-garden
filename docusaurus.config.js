@@ -6,8 +6,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
+  title: 'Icon Garden',
+  tagline: 'Icon Garden are cool',
   url: 'https://your-docusaurus-test-site.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',
@@ -57,7 +57,7 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'My Site',
+        title: 'Icon Garden',
         logo: {
           alt: 'My Site Logo',
           src: 'img/logo.svg',
@@ -65,9 +65,9 @@ const config = {
         items: [
           {
             type: 'doc',
-            docId: 'intro',
+            docId: 'icon',
             position: 'left',
-            label: 'Tutorial',
+            label: '图标',
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
