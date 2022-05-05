@@ -8,8 +8,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'Icon Garden',
   tagline: 'Icon Garden are cool',
-  url: 'https://yijinc.github.io',
-  baseUrl: '/icon-garden/dist/',
+  url: 'https://yijinc.github.io/icon-garden',
+  baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
@@ -33,18 +33,18 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
+          path: 'mdocs',
+          routeBasePath: 'docs',
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          editUrl: 'https://github.com/yijinc/icon-garden/tree/gh-pages',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          editUrl: 'https://github.com/yijinc/icon-garden/tree/gh-pages',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
