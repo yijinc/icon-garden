@@ -9,3 +9,12 @@ lerna-debug.log
 
 packages/*/es
 packages/*/lib
+
+
+# for docusaurus
+.docusaurus
+blog
+docusaurus
+src
+static
+sidebars.js
