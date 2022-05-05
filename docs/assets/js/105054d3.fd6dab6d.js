@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk_icon_garden_docs=self.webpackChunk_icon_garden_docs||[]).push([[8956],{1195:function(a){a.exports=JSON.parse('{"label":"facebook","permalink":"/icon-garden/blog/tags/facebook","allTagsPath":"/icon-garden/blog/tags","count":1}')}}]);
