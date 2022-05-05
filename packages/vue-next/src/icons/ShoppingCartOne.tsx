@@ -19,7 +19,7 @@ export default Vue.defineComponent({
         },
     },
     setup: (props: IIconProps) => {
-        return (
+        return () => (
             <svg
                 width={props.size}
                 height={props.size}
