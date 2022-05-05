@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk_icon_garden_docs=self.webpackChunk_icon_garden_docs||[]).push([[9901],{7362:function(e){e.exports=JSON.parse('{"permalink":"/icon-garden/dist/blog/tags/hello","page":1,"postsPerPage":10,"totalPages":1,"totalCount":2,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);
