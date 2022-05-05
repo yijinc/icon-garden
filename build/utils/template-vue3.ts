@@ -32,7 +32,7 @@ export default (name: string, content: string): string => {
      }
    },
    setup: (props: IIconProps) => {
-     return (
+     return () => (
        ${xml.toString()}
      );
    }
