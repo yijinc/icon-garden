@@ -1,19 +1,7 @@
 {
-    "compilerOptions": {
-        "target": "ESNext",
-        "module": "commonjs",
-        "strict": true,
-        "rootDir": ".",
-        "jsx": "preserve",
-        "moduleResolution": "node",
-        "allowSyntheticDefaultImports": true,
-        "esModuleInterop": true,
-        "preserveSymlinks": true,
-        "resolveJsonModule": true,
-        "removeComments": true,
-        "experimentalDecorators": true,
-        "typeRoots": [
-            "./node_modules/@types",
-        ]
-    }
+  // This file is not used in compilation. It is here just for a nice editor experience.
+  "extends": "@tsconfig/docusaurus/tsconfig.json",
+  "compilerOptions": {
+    "baseUrl": "."
+  }
 }

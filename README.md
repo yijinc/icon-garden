@@ -1,24 +1,41 @@
-最简单的SVG图标库，参考来源于 [IconPark](https://github.com/bytedance/IconPark)。
-不同的是 这个库 **仅支持单色图标**，但它可能更适用于您项目中的图标
+# Website
 
-特点：
+This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
 
- - 只支持改变`color` 和 `size` 两个属性。
- - 设计/开发 无需按照绘制规范制作svg，在 figma\sketch\photoshop 等直接导出（任意）svg文件即可生成组件
-
-## 安装
+### Installation
 
 ```
-yarn add @icon-garden/react
-
-# for vue
-yarn add @icon-garden/vue-next
+$ yarn
 ```
 
-## 使用
+### Local Development
 
-```jsx
-import { AddBaseFilled, AddBaseOutline } from '@icon-garden/react';
-
-<AddBaseOutline color="#b0b1b8" size="20" />
 ```
+$ yarn start
+```
+
+This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+
+### Build
+
+```
+$ yarn build
+```
+
+This command generates static content into the `build` directory and can be served using any static contents hosting service.
+
+### Deployment
+
+Using SSH:
+
+```
+$ USE_SSH=true yarn deploy
+```
+
+Not using SSH:
+
+```
+$ GIT_USER=<Your GitHub username> yarn deploy
+```
+
+If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
