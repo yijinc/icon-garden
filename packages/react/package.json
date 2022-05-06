@@ -7,7 +7,7 @@
     "svg"
   ],
   "author": "yijinc <yijinc@qq.com>",
-  "homepage": "",
+  "homepage": "https://yijinc.github.io/icon-garden",
   "license": "ISC",
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
