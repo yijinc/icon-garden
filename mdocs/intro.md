@@ -1,43 +1,43 @@
-# Tutorial Intro
+---
+sidebar_position: 1
+---
+# Quick start
 
-Let's discover **Docusaurus in less than 5 minutes**.
 
-## Getting Started
-
-Get started by **creating a new site**.
-
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
-
-### What you'll need
-
-- [Node.js](https://nodejs.org/en/download/) version 14 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
-
-## Generate a new site
-
-Generate a new Docusaurus site using the **classic template**.
-
-The classic template will automatically be added to your project after you run the command:
+## Install
 
 ```bash
-npm init docusaurus@latest my-website classic
+
+# react
+yarn add @icon-garden/react
+
+# vue
+yarn add @icon-garden/vue
+
+# vue@3
+yarn add @icon-garden/vue-next
+
+# string svg
+yarn add @icon-garden/svg
+
 ```
 
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
+## Usage
 
-The command also installs all necessary dependencies you need to run Docusaurus.
+```jsx
 
-## Start your site
+import { NewsBaseOutline, NewsBaseFilled } from '@icon-garden/react';
 
-Run the development server:
+<NewsBaseOutline color="#0fc7ba" size="32" />
 
-```bash
-cd my-website
-npm run start
+<NewsBaseFilled color="#f4058d" size="64" />
+
 ```
 
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
+and you'll see
 
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
+import { NewsBaseOutline, NewsBaseFilled } from '@icon-garden/react';
 
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+<NewsBaseOutline color="#0fc7ba" size="32" />
+
+<NewsBaseFilled color="#f4058d" size="64" />
