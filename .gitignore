@@ -14,7 +14,8 @@ packages/*/lib
 # for docusaurus
 .docusaurus
 blog
-docusaurus
+docs
+mdocs
 src
 static
 sidebars.js

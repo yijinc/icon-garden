@@ -1,4 +1,10 @@
-最简单的SVG图标库，参考来源于 [IconPark](https://github.com/bytedance/IconPark)。
+[English](https://github.com/yijinc/icon-garden/blob/master/README.EN.md)
+
+## 介绍
+
+在使用 [IconPark](https://github.com/bytedance/IconPark) 中发现不太满足项目需要，所以有了这个库，相关 [issue](https://github.com/bytedance/IconPark/issues/445)
+
+这是最简单的SVG图标库，参考来源于 [IconPark](https://github.com/bytedance/IconPark)，
 不同的是 这个库 **仅支持单色图标**，但它可能更适用于您项目中的图标
 
 特点：
