@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunk_icon_garden_docs=self.webpackChunk_icon_garden_docs||[]).push([[115],{417:function(s){s.exports=JSON.parse('{"label":"docusaurus","permalink":"/icon-garden/dist/blog/tags/docusaurus","allTagsPath":"/icon-garden/dist/blog/tags","count":4}')}}]);

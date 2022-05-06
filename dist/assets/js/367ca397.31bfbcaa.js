@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunk_icon_garden_docs=self.webpackChunk_icon_garden_docs||[]).push([[2383],{3769:function(e){e.exports=JSON.parse('{"name":"docusaurus-plugin-content-docs","id":"default"}')}}]);
