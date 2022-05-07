@@ -19,7 +19,7 @@ npm install @icon-garden/vue -S
   <add-base-filled color="#b0b1b8" size="20"  />
 </template>
 <script>
-import { AddBaseFilled } from '@icon-park/vue';
+import { AddBaseFilled } from '@icon-garden/vue';
 
 export default {
     components: {
@@ -30,3 +30,12 @@ export default {
 
 ```
 
+you can also install icons globally.
+
+```typescript
+import { install } from '@icon-garden/vue';
+import Vue from 'vue';
+
+// Install
+install(Vue);
+```

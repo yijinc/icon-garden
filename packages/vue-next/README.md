@@ -19,7 +19,7 @@ npm install @icon-garden/vue-next -S
   <AddBaseFilled color="#b0b1b8" size="20"  />
 </template>
 <script>
-import { AddBaseFilled } from '@icon-park/vue-next';
+import { AddBaseFilled } from '@icon-garden/vue-next';
 
 export default {
     components: {
@@ -30,3 +30,14 @@ export default {
 
 ```
 
+you can also install icons globally.
+
+```typescript
+import { install } from '@icon-garden/vue-next';
+import { createApp } from 'vue';
+
+const app = createApp({});
+
+// Install
+install(app);
+```
