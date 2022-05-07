@@ -5,6 +5,12 @@ export const toCamelCase = (name: string) => {
   return name.split('-').map((str: string) => str.charAt(0).toUpperCase() + str.substring(1)).join('');
 }
 
+// for rgba(0,0,0,1) => rgba?\((,|\d)+\)
+// for yellow => (?!(none|transparent))[a-z]+
+// for #F60 | #FF6600 => #[a-fA-F0-9]{3,6}
+// all (rgba?\((,|\d)+\)|(?!(none|transparent))[a-z]+|#[a-fA-F0-9]{3,6})
+const colorReg: string = '(rgba?\\((,|\\d)+\\)|(?!(none|transparent))[a-z]+|#[a-fA-F0-9]{3,6})'
+
 export default class XString extends String {  
   _string = '';
 
@@ -27,7 +33,7 @@ export default class XString extends String {
   public isWithStroke = (): boolean => /stroke/i.test(this._string);
 
   public getColor = (name: 'stroke' | 'fill'): string => {
-    const regexp = new RegExp(`(?<=\\b${name}=")[^none](\\w|#)+(?=\\b")`, 'i');
+    const regexp = new RegExp(`(?<=\\b${name}=")${colorReg}(?=")`, 'i');
     return regexp.exec(this._string)?.[0] || '';
   }
 
@@ -37,7 +43,7 @@ export default class XString extends String {
   }
 
   public setColor = (name: 'stroke' | 'fill', value: string): XString => {
-    const regexp = new RegExp(`(?<=\\b${name}=)"[^none](\\w|#)+\\b"`, 'ig');
+    const regexp = new RegExp(`(?<=\\b${name}=)"${colorReg}"`, 'ig');
     this._string = this._string.replace(regexp, value);
     return this;
   }
