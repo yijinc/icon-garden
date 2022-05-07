@@ -4,7 +4,7 @@
  */
 
 import Vue from "vue";
-import { IIconProps } from "../type";
+import { IIconProps } from "../interface";
 
 export default Vue.defineComponent({
     name: "icon-image-base-outline",

@@ -12,10 +12,10 @@ packages/*/lib
 
 
 # for docusaurus
-.docusaurus
-blog
-docs
-mdocs
-src
-static
-sidebars.js
+/.docusaurus
+/blog
+/docs
+/mdocs
+/src
+/static
+/sidebars.js

@@ -4,7 +4,7 @@
  */
 
 import Vue, { CreateElement, VNode } from "vue";
-import { IIconProps } from "../type";
+import { IIconProps } from "../interface";
 
 export default Vue.extend({
     name: "icon-search-base-outline",

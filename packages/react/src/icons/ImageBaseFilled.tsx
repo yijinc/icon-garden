@@ -4,7 +4,7 @@
  */
 
 import React from "react";
-import { IIconProps } from "../type";
+import { IIconProps } from "../interface";
 
 export default ({ size = 48, color = "black" }: IIconProps) => (
     <svg

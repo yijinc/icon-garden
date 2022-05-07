@@ -17,7 +17,7 @@ export default (name: string, content: string): string => {
 	 */
 	
 	import React from 'react';
-	import { IIconProps } from '../type';
+	import { IIconProps } from '../interface';
 	
 	export default ({
 		size = ${defaultSize},
