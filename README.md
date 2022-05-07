@@ -28,3 +28,19 @@ import { AddBaseFilled, AddBaseOutline } from '@icon-garden/react';
 
 <AddBaseOutline color="#b0b1b8" size="20" />
 ```
+
+
+## 新增图标
+
+将任意svg图标文件放到 `/source` 目录下，然后执行
+
+```bash
+# 生成组件
+npm run compiler
+
+# 打包组件到 lib & es
+npm run build
+
+# 发布
+npm run publish
+```

@@ -24,3 +24,19 @@ import { AddBaseFilled, AddBaseOutline } from '@icon-garden/react';
 
 <AddBaseOutline color="#b0b1b8" size="20" />
 ```
+
+## Add Icons
+
+Put any svg icon file in the `/source` directory and 
+execute
+
+```bash
+# generate components
+npm run compiler
+
+# build components to lib & es
+npm run build
+
+# publish
+npm run publish
+```
