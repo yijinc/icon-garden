@@ -10,7 +10,7 @@ export type IIconProps = {
 }
 
 export const install = (Vue: App): void => {
-  Object.values(IconMap).forEach(icon => {
-    Vue.component(icon.name, icon)
+  Object.entries(IconMap).forEach(([name, icon]) => {
+    Vue.component(name, icon);
   });
 }
