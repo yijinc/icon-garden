@@ -3,4 +3,4 @@
  */
 
  export * from './map';
- export { IIconProps } from "./interface";
+ export { IIconProps, install } from "./interface";

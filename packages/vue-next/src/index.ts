@@ -2,5 +2,5 @@
  * @file index.ts
  */
 
- export * from './map';
- export { IIconProps } from "./interface";
+ export * from './map'
+ export { IIconProps, install } from "./interface";
